@@ -1,0 +1,16 @@
+{
+  "name": "petsite",
+  "version": "1.0.0",
+  "description": "pet website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matthew Gelder",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  }
+}
