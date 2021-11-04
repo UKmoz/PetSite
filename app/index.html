@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Bark Pet Store</title>
 </head>
@@ -17,8 +16,8 @@
         </div>
         <!-- Cart -->
         <div class="nav nav--element nav--right">
-            <p class="nav__cart_counter secondary__font" id="nav__cart_counter"></p>
-            <img class="nav__cart" src="assets/svg/bag.svg"/>
+                <p class="nav__cart_counter secondary__font" id="nav__cart_counter"></p>
+                <img onclick="openCart();" class="nav__cart" src="assets/svg/bag.svg"/>
         </div>
     </section>
     <!-- Nav end -->
@@ -31,12 +30,12 @@
                 <p class="block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor.</p>
             </div>
         </div>
-        <div class="block--half block--half-right">
+        <div class="block block--half block--half-right">
             <div class="block--product-card">
                 <img class="block__product_img" src="assets/png/chicken@2x.png"/>
                 <div class="block--product-info">
                     <h2 class="block__product_title secondary__font">Natures Menu Dog Food Can Chicken</h2>
-                    <h2 class="price__format">£22.81</h2>
+                    <h2 id="block--product-price" class="price__format">£22.81</h2>
                     <a class="block__product_button button__format" id="addToCart" onclick="addToCart()">ADD TO CART</a>
                 </div>
             </div>
@@ -52,17 +51,20 @@
                     <img class="cart__close" src="assets/svg/close.svg"/>
                 </a>
             </div>
-            <div class="cart--drawer-confirmation cart--text-center">
+            <div id="cart--drawer-cont">
+            <div id="cart--drawer-confirmation" class="cart--drawer-confirmation cart--text-center">
                 <p class="cart__confirmation_p">Item added to cart!</p>
             </div>
             <img class="cart--drawer-img" src="assets/png/chicken.png"/>
             <div class="cart--info-cont">
                 <p class="cart__product_title">Natures Menu Dog Food Can Chicken</p>
                 <p class="price__format">£22.81</p>
-                <p id="cart__quantity">Quantity: 1</p>
-                <p class="cart_remove__format">Remove</p>
+                <p id="cart__quantity">Quantity: 0</p>
+                <p class="cart_remove__format" onclick="decreaseCartCounter();">Remove</p>
+                <p id="cart__drawer_price" class="price__format">Total: £0</p>
             </div>
             <a class="cart__product_button button__format">CHECKOUT</a>
+        </div>
         </div>
     </section>
     <!-- Cart drawer end -->
