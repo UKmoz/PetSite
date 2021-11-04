@@ -21,7 +21,6 @@
         </div>
     </section>
     <!-- Nav end -->
-
     <!-- Content block -->
     <section class="block block--full-width">
         <div class="block--half block--half-left">
@@ -51,20 +50,24 @@
                     <img class="cart__close" src="assets/svg/close.svg"/>
                 </a>
             </div>
-            <div id="cart--drawer-cont">
             <div id="cart--drawer-confirmation" class="cart--drawer-confirmation cart--text-center">
                 <p class="cart__confirmation_p">Item added to cart!</p>
             </div>
-            <img class="cart--drawer-img" src="assets/png/chicken.png"/>
-            <div class="cart--info-cont">
-                <p class="cart__product_title">Natures Menu Dog Food Can Chicken</p>
-                <p class="price__format">£22.81</p>
-                <p id="cart__quantity">Quantity: 0</p>
-                <p class="cart_remove__format" onclick="decreaseCartCounter();">Remove</p>
-                <p id="cart__drawer_price" class="price__format">Total: £0</p>
+            <div class="cart--product-info">
+                <img class="cart--drawer-img" src="assets/png/chicken.png"/>
+                <div class="cart--info-cont">
+                    <p class="cart__product_title">Natures Menu Dog Food Can Chicken</p>
+                    <p class="price__format">£22.81</p>
+                    <p id="cart__quantity">Quantity: 0</p>
+                    <p class="cart_remove__format" onclick="decreaseCartCounter();">Remove</p>
+                </div>
             </div>
-            <a class="cart__product_button button__format">CHECKOUT</a>
-        </div>
+            <hr class="hr__secondary">
+            <div class="cart--btn-cont">
+                <h2 id="cart__drawer_price" class="cart__drawer_cta price__format">Subtotal: £0</h2>
+                <a class="cart__product_button button__format">PROCEED TO CHECKOUT</a>
+                <h2 class="cart__drawer_cta">Continue Shopping</h2>
+            </div>
         </div>
     </section>
     <!-- Cart drawer end -->

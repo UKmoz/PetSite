@@ -28,14 +28,18 @@ function addToCart() {
   }
 
   function decreaseCartCounter() {
-    cartAmount--;
-    updateQuantity();
 
-    if (cartAmount == 0) {
+
+    if (cartAmount == 1) {
+      cartAmount--;
+      updateQuantity();
       setTimeout (function() {  
         closeDrawer();
       },
       1000);
+    } else {
+      cartAmount--;
+      updateQuantity();
     }
   }
 
@@ -48,7 +52,7 @@ function updateQuantity() {
   cartCounter.innerHTML = cartAmount;
   quantityText.innerHTML = "Quantity: "+cartAmount;
   cartPriceTotal = productPrice * cartAmount;
-  cartPrice.innerHTML = "Total: £"+cartPriceTotal.toFixed(2);
+  cartPrice.innerHTML = "Subtotal: £"+cartPriceTotal.toFixed(2);
 }  
 
 function closeDrawer() {
