@@ -35,7 +35,7 @@ body {
 
 .block__cart_loader {
   border: 8px solid white;
-  border-top: 8px solid black;
+  border-top: 8px solid #000000;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -193,7 +193,6 @@ body {
   background-color: #9feaa3;
   height: 40px;
   line-height: 40px;
-  display: none;
 }
 
 .drawer--active {

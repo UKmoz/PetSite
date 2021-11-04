@@ -223,7 +223,6 @@ body {
   background-color: #9feaa3;
   height: 40px;
   line-height: 40px;
-  opacity: 0;
 }
 
 .drawer--active {
@@ -283,7 +282,7 @@ body {
   margin-top: 0;
 }
 
-.cart--info-cont > .cart__drawer_price {
+.cart--info-cont > #cart__drawer_price {
   text-align: center;
   width: 100%;
   padding-top: 20px;
