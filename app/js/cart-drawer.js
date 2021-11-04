@@ -23,17 +23,4 @@ function closeDrawer() {
     addToCart.classList.remove('drawer--active');
     addToCartText.innerHTML = '<p class="block__product_button button__format">ADD TO CART</p>';
 }  
-
-
-
-    // $( "#addToCart" ).click(function() {
-    //     setTimeout (function() {
-    // $(".cart--drawer").addClass("drawer--active")
-    //     },
-    //     1000);
-    // });
-    
-    // $( "#closeDrawer" ).click(function() {
-    //     $(".cart--drawer").removeClass("drawer--active")
-    //     });
     
