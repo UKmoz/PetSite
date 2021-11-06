@@ -31,8 +31,9 @@ function addToCart() {
 
 
     if (cartAmount == 1) {
-      cartAmount--;
-      updateQuantity();
+      cartAmount = 0;
+      quantityText.innerHTML = "Quantity: "+cartAmount;
+      cartCounter.innerHTML = '';
       setTimeout (function() {  
         closeDrawer();
       },

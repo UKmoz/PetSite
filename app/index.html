@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <title>Bark Pet Store</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
     <section class="cart cart--drawer secondary__font" id="cart--drawer">
         <div class="cart--drawer-wrapper">
             <div class="cart--drawer-nav">
-                <h2 class="cart__drawer_title">My Cart</h2>
+                <h2 class="cart__drawer_title">Your Bag</h2>
                 <a onclick="closeDrawer()">
                     <img class="cart__close" src="assets/svg/close.svg"/>
                 </a>
@@ -59,19 +59,19 @@
                     <p class="cart__product_title">Natures Menu Dog Food Can Chicken</p>
                     <p class="price__format">£22.81</p>
                     <p id="cart__quantity">Quantity: 0</p>
-                    <p class="cart_remove__format" onclick="decreaseCartCounter();">Remove</p>
+                    <p class="cart_remove__format" onclick="decreaseCartCounter();">REMOVE</p>
                 </div>
             </div>
             <hr class="hr__secondary">
             <div class="cart--btn-cont">
                 <h2 id="cart__drawer_price" class="cart__drawer_cta price__format">Subtotal: £0</h2>
                 <a class="cart__product_button button__format">PROCEED TO CHECKOUT</a>
-                <h2 class="cart__drawer_cta">Continue Shopping</h2>
+                <h2 class="cart__drawer_cta cart__continue_btn">CONTINUE SHOPPING</h2>
             </div>
         </div>
     </section>
     <!-- Cart drawer end -->
 </body>
-<script src="js/cart-drawer.js"></script>
+<script src="js/cart-drawer.min.js"></script>
 
 </html>
